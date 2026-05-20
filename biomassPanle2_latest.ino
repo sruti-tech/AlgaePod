@@ -9,8 +9,8 @@
 int LED_BUILTIN = 2;
 
 // ===== WiFi Credentials =====
-const char* WIFI_SSID = "Cheerstopeace";
-const char* WIFI_PASSWORD = "Wedontshare@321";
+const char* WIFI_SSID = "ssid";
+const char* WIFI_PASSWORD = "password";
 
 // ===== AWS IoT Config =====
 const char* AWS_HOST = "a2s4crf9kqjne6-ats.iot.us-east-1.amazonaws.com";
