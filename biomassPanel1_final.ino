@@ -1,3 +1,4 @@
+//version 1 on may21 for demo
 #include <WiFi.h>
 #include <WiFiClientSecure.h>
 #include <PubSubClient.h>
@@ -205,6 +206,7 @@ void setup() {
   payload += "\"temperature\":" + String(temperature, 2) + ",";
   payload += "\"ph\":" + String(ph, 2) + ",";
   payload += "\"co2\":" + String(co2, 2);
+  payload += "\"lastUpdatedDate\":\"2026-05-21\",";
   payload += "}";
 
   client.publish(MQTT_TOPIC, payload.c_str());
